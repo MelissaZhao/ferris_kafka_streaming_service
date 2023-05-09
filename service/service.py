@@ -240,8 +240,6 @@ def fetch_data_from_kafka(chart_type):
 
     return data
 
-    
-
 def upload_to_minio(chart_type):
     # Fetch data from Kafka
     data = fetch_data_from_kafka(chart_type)
@@ -304,7 +302,6 @@ def get_minio_url(chart_type):
         return url
     except S3Error as exc:
         print(f"Error generating URL for {file_name}: {exc}")
-
 
 if __name__ == '__main__':
     logging.basicConfig(
