@@ -1,0 +1,13 @@
+{
+    "description": "Service with manifest file for kafka events",
+    "execution_order": [
+        "scan_news_keywords.py",
+        "service.py"
+    ],
+    "tags": [
+        "kafka_service_prep_for_dash"
+    ],
+    "schedule": "0 8 * * *",
+    "allow_manual_triggering": true,
+    "active": true
+}

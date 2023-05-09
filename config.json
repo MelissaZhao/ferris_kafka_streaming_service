@@ -1,0 +1,7 @@
+{
+    "keywords": "climate change",
+    "kafka": {
+        "bootstrap_servers": "kafka.core:9092",
+        "topic": "esg-news"
+    }
+}
