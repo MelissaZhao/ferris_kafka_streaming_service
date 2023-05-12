@@ -16,13 +16,17 @@ import asyncio
 from datetime import datetime, timedelta
 import pytz
 import json
+from ferris_ef import context
 
-with open('config.json') as config_file:
-    config = json.load(config_file)
+#with open('config.json') as config_file:
+    #config = json.load(config_file)
+
+# change ferris approach to read config file from local approach
 
 KEYWORDS = config['keywords']
 KAFKA_BOOTSTRAP_SERVERS = config['kafka']['bootstrap_servers']
 KAFKA_TOPIC = config['kafka']['topic']
+
 
 
 def generate_color():
